@@ -31,6 +31,10 @@ body {
 hr {
   border: 2px solid white;
   width:30%;
+<<<<<<< HEAD
+=======
+  margin-left:35%;
+>>>>>>> 6542ad431ab9fbf14c18c454a8ae8b7d34b285c3
 }
 
 h1 {
@@ -46,4 +50,9 @@ input[type="submit"]{
   width:15%;
   font-family:monospace;
   margin-bottom:10px;
+  border:0;
+}
+
+input[type="submit"]:hover{
+  background-color:#4b6858;
 }

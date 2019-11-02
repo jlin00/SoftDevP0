@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Login</title>
-        <link rel="stylesheet" type="text/css" href="../static/css/login.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/login.css">
     </head>
     <body>
         <div>
@@ -11,16 +11,15 @@
             Log into Spewing Blogs!
         </div>
         {% with errors = get_flashed_messages() %}
-            <ul>
                 {% for error in errors %}
-                    <li>{{ error }}</li>
+                  {{ error }}
                 {% endfor %}
-            </ul>
         {% endwith %}
+        <br>
         <form method = "GET">
             <label>Username</label>
             <input type = "text" name = "username">
-            <br>
+            <br><br>
             <label>Password</label>
             <input type = "password" name = "password">
             <br><br>
