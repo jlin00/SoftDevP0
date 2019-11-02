@@ -10,9 +10,17 @@
         {% block header %}
         <form action = "/logout">
             Hello, {{username}}
-            <input type="submit" value="Log Out">
-            <input type="submit" name = "myblogs" value="My Blogs" formaction="/blogs">
-            <input type="submit" value = "Home" formaction="/home">
+
+            <div class="dropdown">
+              <div class="dropbtn">
+                <button disabled>Menu</button>
+              </div>
+              <div class="dropdown-content">
+                <a href="/home">Home</a>
+                <a href="/blogs">Blogs</a>
+                <a href="/logout">Log Out</a>
+              </div>
+            </div>
         </form>
         {% endblock %}
         <hr>
