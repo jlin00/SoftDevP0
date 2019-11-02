@@ -1,0 +1,27 @@
+body {
+  background-color:#46acc2;
+  color:#f7f7f7;
+  font-family: monospace;
+  text-align:center;
+}
+
+hr {
+  border: 2px solid white;
+  width:30%;
+  margin-left:40%;
+}
+
+h1 {
+  margin-bottom:10px;
+  font-size:40px;
+}
+
+input[type="submit"]{
+  background-color:#498c8A;
+  border-radius:10px;
+  color:#f7f7f7;
+  font-weight:600;
+  width:15%;
+  font-family:monospace;
+  margin-bottom:10px;
+}
