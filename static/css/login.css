@@ -27,6 +27,6 @@ input[type="submit"]{
   border:0;
 }
 
-li {
-  color:red;
+input[type="submit"]:hover{
+  background-color:#4b6858;
 }
