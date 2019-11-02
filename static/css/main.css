@@ -1,0 +1,22 @@
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #46acc2,#8AF3FF,#46acc2);
+  background-repeat: no-repeat;
+
+  font-family: monospace;
+  text-align:center;
+}
+hr {
+  border: 2px solid white;
+  width:30%;
+}
+h1 {
+  margin-bottom:10px;
+  font-size:40px;
+}
+form{
+  font-family: monospace;
+  font-size: 20px;
+}

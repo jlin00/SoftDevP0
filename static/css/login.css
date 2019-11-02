@@ -1,14 +1,40 @@
+@keyframes background {
+  0% {
+    background-position: 50% 0%
+  }
+  25% {
+    background-position: 50% 50%
+  }
+  50% {
+    background-position: 0% 50%
+  }
+  75% {
+    background-position: 50% 50%
+  }
+  100%{
+    background-position: 50% 0%
+  }
+}
 body {
+  height: 100%;
   background-color:#46acc2;
   color:#f7f7f7;
+  background-size: cover;
   font-family: monospace;
   text-align:center;
+  height: 100%;
+  background: linear-gradient(225deg, #46acc2, #FB3640) fixed;
+  background-size: 400% 400%;
+  animation: background 10s linear infinite;
 }
 
 hr {
   border: 2px solid white;
   width:30%;
+<<<<<<< HEAD
+=======
   margin-left:35%;
+>>>>>>> 6542ad431ab9fbf14c18c454a8ae8b7d34b285c3
 }
 
 h1 {
