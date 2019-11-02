@@ -8,7 +8,7 @@ body {
 hr {
   border: 2px solid white;
   width:30%;
-  margin-left:40%;
+  margin-left:35%;
 }
 
 h1 {
@@ -24,4 +24,9 @@ input[type="submit"]{
   width:15%;
   font-family:monospace;
   margin-bottom:10px;
+  border:0;
+}
+
+li {
+  color:red;
 }
