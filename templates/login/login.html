@@ -11,11 +11,9 @@
             Log into Spewing Blogs!
         </div>
         {% with errors = get_flashed_messages() %}
-            <ul>
                 {% for error in errors %}
-                    <li>{{ error }}</li>
+                  {{ error }}
                 {% endfor %}
-            </ul>
         {% endwith %}
         <br>
         <form method = "GET">
