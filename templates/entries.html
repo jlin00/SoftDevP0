@@ -1,13 +1,17 @@
+<!--Amanda Zheng & Jackie Lin (DJ AJ)-->
+<!--css designing pd1-->
+<!--11-2-2019-->
 {% extends "navigator.html" %}
-
+{%block link%}
+    <link rel="stylesheet" type="text/css" href="../static/css/entry.css">
+{%endblock%}
 {% block title %}
     {{blog_name}}
 {% endblock %}
-
 {% block body %}
     Here are {{blog_name}}'s Entries!
     {% if isOwner %}
-        <br>
+    <hr>
         {% with errors = get_flashed_messages() %}
             <ul>
                 {% for error in errors %}
@@ -40,9 +44,7 @@
         {% endfor %}
     {% else %}
         {% for entry in entries %}
-          <hr>
           <h3>{{entry[0]}}</h3>
-          <br>
           {{entry[1]}}
           <br>
         {% endfor %}
