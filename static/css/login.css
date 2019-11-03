@@ -49,6 +49,7 @@ input[type="submit"]{
   font-family:monospace;
   margin-bottom:10px;
   border:0;
+  font-size:12px;
 }
 
 input[type="submit"]:hover{
