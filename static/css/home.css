@@ -9,3 +9,7 @@ input[type="submit"]{
   margin-bottom:10px;
   font-size:14px;
 }
+
+input[type="submit"]:hover{
+  background-color:rgba(200, 200, 200, 0.5);
+}
