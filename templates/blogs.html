@@ -4,10 +4,21 @@
     {{name}} Blogs
 {% endblock %}
 
+{% block link %}
+  <link rel="stylesheet" type="text/css" href="../static/css/blog.css">
+{% endblock %}
+
 {% block body %}
-    Here are {{name}} Blogs!
+    Here are {{name}} Blogs!<br>
+    <br>
+    {% for blog in blogs %}
+        <form action = "/blogs/entries" method = "GET">
+          <input type=hidden name="user" value={{name}}>
+          <input type = "submit" name = "blog_name" value = {{blog}}>
+        </form>
+    {% endfor %}
+
     {% if isOwner %}
-        <br>
         {% with errors = get_flashed_messages() %}
             <ul>
                 {% for error in errors %}
@@ -18,15 +29,7 @@
         <br>
         <form action = "/blogs" method = "GET">
             <input type = "text" name = "blog_name" placeholder = "New Blog Title">
-            <input type = "submit" name="blog_creation" value = "Create Blog">
+            <input type = "submit" name="blog_creation" value = "Create">
         </form>
     {% endif %}
-    <br>
-    {% for blog in blogs %}
-        <form action = "/blogs/entries" method = "GET">
-          <input type=hidden name="user" value={{name}}>
-          <input type = "submit" name = "blog_name" value = {{blog}}>
-        </form>
-        <br>
-    {% endfor %}
 {% endblock %}
