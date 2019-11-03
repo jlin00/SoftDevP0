@@ -12,14 +12,13 @@
             Create an account to Spewing Blogs!
         </div>
         {% with errors = get_flashed_messages() %}
-            <ul>
                 {% for error in errors %}
-                    <li>{{ error }}</li>
+                    <span style="color:red; font-size:12px;">
+                      {{ error }}
+                    </span>
                 {% endfor %}
-            </ul>
         {% endwith %}
-        <br>
-        <form method="GET">
+        <br><form method="GET">
             <label>Enter Username</label>
             <input type="text" name="username">
             <br><br>

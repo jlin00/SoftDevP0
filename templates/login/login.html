@@ -12,11 +12,12 @@
         </div>
         {% with errors = get_flashed_messages() %}
                 {% for error in errors %}
-                  {{ error }}
+                  <span style="color:red; font-size:12px;">
+                    {{ error }}
+                  </span>
                 {% endfor %}
         {% endwith %}
-        <br>
-        <form method = "GET">
+        <br><form method = "GET">
             <label>Username</label>
             <input type = "text" name = "username">
             <br><br>

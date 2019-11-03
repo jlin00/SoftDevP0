@@ -3,6 +3,10 @@
     Welcome!
 {% endblock %}
 
+{% block link %}
+  <link rel="stylesheet" type="text/css" href="../static/css/home.css">
+{% endblock %}
+
 {% block body %}
     Explore other Blogs!
     {% for user in usernames %}
